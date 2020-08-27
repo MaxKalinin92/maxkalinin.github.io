@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+
+<div class="container"> 
+    <div class="head">
+        
+        <header>
+        <div class="burger">
+            <span class="material-icons">menu</span>
+        </div>
+
+        <div class="nav">
+            <div class="nav-btns">
+                
+                     <span tooltip="Previous" flow="down" class="material-icons active">arrow_back</span>
+                     <span tooltip="Next" flow="down" class="material-icons passive">arrow_forward</span>
+                     <span tooltip="History" flow="down" class="material-icons active">access_time</span>
+                
+            </div>
+        
+            <div class="search-box">
+                <input class="search" type="text" placeholder="Search Ais" required>
+            </div>
+        </div>
+        <div class="help-btn">
+            <span tooltip="Help" flow="down" class="material-icons">help_outline</span>
+        </div>
+    </header>
+    
+        <div class="top">
+             <div class="side-top-container">              
+                <div class="side-top">
+                    <div class="group-name">
+                         <h3>Ais</h3>
+                        <span class="material-icons">keyboard_arrow_down</span>
+                    </div>        
+                     <div class="user-name">
+                        <div class="status"></div>
+                        <span>Max Kalinin</span>
+                    </div>
+                </div>
+
+                <div tooltip="New message" flow="down" class="create-message">
+                    <div>
+                       <span class="material-icons">create</span>
+                    </div> 
+                </div>
+
+            </div>
+            <div class="chat-top">
+                <div class="channel">
+                    <div class="channel-name">
+                        <span>#random</span>
+                        <span class="material-icons">star_outline_border</span>
+                    </div>
+                    <div class="channel-info-items">
+                        <div class="member-list-btn">
+                            <span class="material-icons">person_outline</span>
+                            <span>634</span>
+                        </div>
+                        <div class="channel-topic">
+                            <span>Non-work banter and water cooler conversation</span>
+                            <a href="#" class="hovered">Edit</a>
+                        </div>
+                    </div>
+                </div>
+                <div tooltip="Show channel details" flow="down-right" class="channel-info-icon">
+                    <span class="material-icons">info_outline</span>
+                    <span >Details</span>
+                </div>
+            </div>
+        </div> 
+    </div>   
+
+    <div class="content-wrapper">
+
+        <div class="sidebar">
+                <div class="navigation">
+                    <div> <div class="side-item">   
+                             <span class="material-icons">comment</span>     
+                             <span>Threads</span>    
+                          </div> 
+                    </div>
+                    <div> 
+                        <div class="side-item">   
+                            <span class="material-icons">alternate_email</span>     
+                            <span>Mentons & reactions</span>    
+                        </div> 
+                    </div>
+                    <div> 
+                        <div class="side-item">   
+                            <span class="material-icons">file_copy</span>   
+                            <span>Drafts</span>    
+                        </div> 
+                    </div>
+                    <div> 
+                        <div class="side-item">   
+                            <span class="material-icons">contact_page</span>    
+                            <span>People & user groups</span>   
+                        </div> 
+                    </div>
+                    <div> 
+                        <div class="side-item">   
+                            <span class="material-icons"> apps </span>    
+                            <span> Apps </span>  
+                        </div> 
+                    </div>
+                    <div> 
+                        <div class="side-item">   
+                            <span class="material-icons">source</span>    
+                            <span>File browser</span> 
+                        </div> 
+                    </div>
+                    <div> 
+                        <div class="side-item">   
+                            <span class="material-icons">arrow_upward</span>    
+                            <span>Show  less</span> 
+                        </div> 
+                    </div>
+                </div>
+
+                
+            <div class="channels">
+                <div class="drop-down-list-btn">
+                    <div>
+                         <span class="material-icons arrow">arrow_drop_down</span>
+                    </div>
+                    <span class="name">Channels</span>
+                    <div>
+                        <span class="material-icons" >add</span>
+                    </div>
+                </div>
+                   
+                <div class="side-item-1">
+                    <span># &nbsp; general</span>
+                </div>
+                    
+                <div class="side-item-1">
+                    <span># &nbsp; questions</span>
+                </div>
+                <div class="side-item-1 random">
+                    <span># &nbsp; random</span>
+                </div>
+                <div class="side-item-1">
+                    <span># &nbsp; task1</span>
+                </div>
+                <div class="side-item-1">
+                    <span># &nbsp; task2</span>
+                </div>
+                <div class="add-item-container">
+                    <span class="material-icons add">add</span>
+                    <span class="add-item">Add a channel</span>
+                    <div class="clear">
+                        <span class="material-icons">clear</span>
+                    </div>
+                </div>               
+            </div>
+
+            <div class="direct">    
+                <div class="drop-down-list-btn">
+                    <div>
+                        <span class="material-icons arrow">arrow_drop_down</span>
+                    </div>
+                    <span class="name">Direct messages</span>
+                    <div>
+                        <span class="material-icons">add</span>
+                    </div>
+                </div>
+            
+                <div class="add-item-container">
+                    <div class="status"></div>
+                    <span class="add-item">max.kalinin &nbsp; (you)</span>
+                    <div class="clear">
+                        <span class="material-icons">clear</span>
+                    </div>
+                </div> 
+
+                <div class="add-item-container">
+                    <div class="status"></div>
+                    <span class="add-item">Ivan Ivanov &nbsp;</span>
+                    <div class="clear">
+                        <span class="material-icons">clear</span>
+                    </div>
+                </div>
+
+                <div class="add-item-container">
+                    <div class="status"></div>
+                    <span class="add-item">petr petrov &nbsp;</span>
+                    <div class="clear">
+                        <span class="material-icons">clear</span>
+                    </div>
+                </div>
+
+                <div class="add-item-container">
+                    <div class="status"></div>
+                    <span class="add-item">dart.vader &nbsp;</span>
+                    <div class="clear">
+                        <span class="material-icons">clear</span>
+                    </div>
+                </div>
+
+                <div class="add-item-container">
+                    <div class="status"></div>
+                    <span class="add-item">walter.white &nbsp;</span>
+                    <div class="clear">
+                        <span class="material-icons">clear</span>
+                    </div>
+                </div>
+
+                <div class="add-item-container">
+                    <div class="status"></div>
+                    <span class="add-item">Boris.Yurinov &nbsp;</span>
+                    <div class="clear">
+                        <span class="material-icons">clear</span>
+                    </div>
+                </div>
+
+                <div class="add-item-container">
+                    <span class="material-icons add">add</span>
+                    <span class="add-item invite-people">invite people</span>
+                    <div class="clear">
+                        <span class="material-icons">clear</span>
+                    </div>
+                </div> 
+            </div>  
+
+        </div>
+
+        <div class="chat-container">
+
+        <div class="chat">
+                <div class="title-container">
+                        <div class="title">
+                            <div class="day"><span >Monday, June 1st</span></div> 
+                        </div>
+                </div>
+                <div class="message-container">
+                    <div class="user-image-container"><div class="user-image" style="background-image: url(img/users/boris.jpg);"></div></div> 
+                        <div class="message">
+                            <div class="message-head">
+                                <span class="username">Boris.Yurinov</span>
+                                <span class="time">17:03</span>
+                            </div>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae odit animi sed corporis possimus labore, ut eligendi aliquam adipisci placeat totam autem repellat sequi deserunt facilis commodi? Nobis aut earum, dolores sed aspernatur deserunt doloribus fugiat deleniti. Possimus incidunt voluptatem ipsa veritatis tempora sit aut, illum ullam dolore! Consectetur eveniet reiciendis placeat error perferendis voluptas quos vel, similique nam dolorem eaque fugit, ullam sequi quibusdam, tenetur labore recusandae accusamus pariatur culpa reprehenderit! Quos eum pariatur sed molestiae vel delectus, distinctio quidem deleniti unde iusto, sequi incidunt nulla molestias adipisci consequuntur tempore sapiente corrupti! Quaerat vero est ut eius ducimus ipsa!</p>
+                        </div>
+                </div>
+
+                <div class="title-container">
+                            <div class="title">
+                                <div class="day"><span >Tuesday, June 2nd</span></div>  
+                            </div>
+                    </div>
+            <div class="daily-message">
+                    <div class="message-container">
+                        <div class="user-image-container"><div class="user-image" style="background-image: url(img/users/cat.jpg);"></div></div> 
+                            <div class="message">
+                                <div class="message-head">
+                                    <span class="username">Ivan Ivanov</span>
+                                    <span class="time">12:22</span>
+                                </div>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae odit animi sed corporis possimus labore, ut eligendi aliquam adipisci placeat totam autem repellat sequi deserunt facilis commodi? Nobis aut earum, dolores sed aspernatur deserunt doloribus fugiat deleniti. Possimus incidunt voluptatem ipsa veritatis tempora sit aut, illum ullam dolore! Consectetur eveniet reiciendis placeat error perferendis voluptas quos vel, similique nam dolorem eaque fugit, ullam sequi quibusdam, tenetur labore recusandae accusamus pariatur culpa reprehenderit! Quos eum pariatur sed molestiae vel delectus, distinctio quidem deleniti unde iusto, sequi incidunt nulla molestias adipisci consequuntur tempore sapiente corrupti! Quaerat vero est ut eius ducimus ipsa!</p>
+                            </div>  
+                    </div>
+
+                    <div class="message-container">
+                        <div class="user-image-container"><div class="user-image" style="background-image: url(img/users/walter.jpg);"></div></div> 
+                            <div class="message">
+                                <div class="message-head">
+                                    <span class="username">walter.white</span>
+                                    <span class="time">12:28</span>
+                                </div>
+                                    <p>Illo, nam. At quos dolor non consequatur repellat dolorum sapiente sit placeat quisquam vel repellendus maxime, eos odit accusamus distinctio, atque nemo.Id aut facere fuga temporibus, vel modi eius at sit eum amet. Laboriosam cupiditate animi enim eum quo ullam placeat, rerum ratione ea mollitia sapiente iure praesentium quaerat qui nihil.</p>
+                            </div>  
+                    </div>
+            </div>
+                    <div class="title-container">
+                        <div class="title">
+                            <div class="day"><span >Wednesday, June 3rd</span></div>  
+                        </div>
+                </div>
+                <div class="message-container">
+                    <div class="user-image-container"><div class="user-image" style="background-image: url(img/users/albert.jpg);"></div></div> 
+                        <div class="message">
+                            <div class="message-head">
+                                <span class="username">Petr Petrov</span>
+                                <span class="time">10:07</span>
+                            </div>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione beatae cumque nam dolorum ex quae soluta nulla eaque in nihil facilis laudantium tempore modi, voluptates placeat, dolor assumenda culpa sunt.</p>
+                                <div class="message-img-container">
+                                    <p>screen.jpg</p>
+                                    <div class="message-img" style="background-image: url(img/screenshots/screen.jpg);"></div>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="title-container">
+                            <div class="title">
+                                <div class="day"><span >Thursday, June 4th</span></div>  
+                            </div>
+                    </div>
+                    <div class="daily-message">
+                    <div class="message-container">
+                        <div class="user-image-container"><div class="user-image" style="background-image: url(img/users/vader.jpg);"></div></div> 
+                            <div class="message">
+                                <div class="message-head">
+                                    <span class="username">dart.vader</span>
+                                    <span class="time">11:00</span>
+                                </div>
+                                    <p>Nobis aut earum, dolores sed aspernatur deserunt doloribus fugiat deleniti. Possimus incidunt voluptatem ipsa veritatis tempora sit aut, illum ullam dolore! Consectetur eveniet reiciendis placeat error perferendis voluptas quos vel, similique nam dolorem eaque fugit, ullam sequi quibusdam, tenetur labore recusandae accusamus pariatur culpa reprehenderit! Quos eum pariatur sed molestiae vel delectus, distinctio quidem deleniti unde iusto, sequi incidunt nulla molestias adipisci consequuntur tempore sapiente corrupti! Quaerat vero est ut eius ducimus ipsa!</p>
+                            </div>
+                    </div>
+
+                    <div class="message-container">
+                        <div class="user-image-container"><div class="user-image" style="background-image: url(img/users/boris.jpg);"></div></div> 
+                            <div class="message">
+                                <div class="message-head">
+                                    <span class="username">Boris.Yurinov</span>
+                                    <span class="time">11:03</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa fugit aliquam labore consequuntur porro non ipsam nisi doloribus ut libero minus voluptates, asperiores fugiat voluptatibus. Dolor nobis recusandae ea velit?Dignissimos sequi molestiae necessitatibus blanditiis expedita incidunt, ad ducimus ex earum tempore hic numquam cum obcaecati alias fuga eos magnam voluptatem vero error aspernatur at porro laboriosam corporis beatae. Itaque.</p>
+                            </div>
+                    </div>
+
+                    <div class="message-container">
+                        <div class="user-image-container"><div class="user-image" style="background-image: url(img/users/walter.jpg);"></div></div> 
+                            <div class="message">
+                                <div class="message-head">
+                                    <span class="username">walter.white</span>
+                                    <span class="time">22:00</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias unde dignissimos earum repellendus quo vel nostrum quas commodi ea suscipit minus, perferendis totam deleniti enim recusandae expedita iure facilis! Fugit.
+                                Eligendi earum dolorum tempore architecto amet, eum odit corrupti molestias iure sequi animi mollitia tenetur totam quo placeat voluptatibus aliquam? Nihil tenetur repellat amet omnis veritatis officiis perspiciatis velit sint.
+                                Mollitia dolor reiciendis alias quas explicabo vel ad deserunt dolores. Corrupti repellat laborum quasi repellendus numquam iste, velit commodi, id tempore quisquam quo delectus? Non alias minus minima culpa perferendis.</p>
+                            </div>
+                    </div>
+                </div>
+                   
+                
+
+                <!-- <div class="title-container">
+                            <div class="title">
+                                <div class="day"><span >Monday, June 1st</span></div>  
+                            </div>
+                    </div>
+                    <div class="message-container">
+                        <div class="user-image-container"><div class="user-image" style="background-image: url(img/users/boris.jpg);"></div></div> 
+                            <div class="message">
+                                <div class="message-head">
+                                    <span class="username">Boris 'The Blade'</span>
+                                    <span class="time">17:03</span>
+                                </div>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae odit animi sed corporis possimus labore, ut eligendi aliquam adipisci placeat totam autem repellat sequi deserunt facilis commodi? Nobis aut earum, dolores sed aspernatur deserunt doloribus fugiat deleniti. Possimus incidunt voluptatem ipsa veritatis tempora sit aut, illum ullam dolore! Consectetur eveniet reiciendis placeat error perferendis voluptas quos vel, similique nam dolorem eaque fugit, ullam sequi quibusdam, tenetur labore recusandae accusamus pariatur culpa reprehenderit! Quos eum pariatur sed molestiae vel delectus, distinctio quidem deleniti unde iusto, sequi incidunt nulla molestias adipisci consequuntur tempore sapiente corrupti! Quaerat vero est ut eius ducimus ipsa!</p>
+                            </div>
+                    </div> -->
+                </div>
+                    <div class="new-message-container">
+                        
+                            <div class="input" contenteditable="true" placeholder="New Message"></div>
+                            <div class="toolbar">
+                                <div class="shortcuts">
+                                    <div><span class="material-icons">flash_on</span></div>
+                                </div>
+                                <div class="text-tools">
+                                    <div><span class="material-icons">format_bold</span></div>
+                                    <div><span class="material-icons">format_italic</span></div>
+                                    <div><span class="material-icons">strikethrough_s</span></div>
+                                    <div><span class="code-icon"> &lt&#8260&gt </span></div>
+                                    <div><span class="material-icons">link</span></div>
+                                    <div><span class="material-icons">format_list_numbered</span></div>
+                                    <div><span class="material-icons">format_list_bulleted</span></div>
+                                    <div><span class="material-icons">notes</span></div>
+                                    <div><span class="material-icons">settings_ethernet</span></div>
+                                </div>
+                                <div class="other-tools">
+                                    <div class="hide-formatting-btn"><span>Aa</span></div>
+                                    <div><span>@</span></div>     
+                                    <div class="smile" tooltip="Emoji" flow="top">
+                                         <span class="colored-smile">&#128515;</span>
+                                         <span class="colorless-smile">&#9786;</span>
+                                    </div>
+                                    <div><span class="material-icons">attach_file</span></div>
+                                    <div class="send-message-btn"><span class="material-icons">send</span></div>
+                                </div>
+                            </div>
+                    </div>      
+
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+
+</html>

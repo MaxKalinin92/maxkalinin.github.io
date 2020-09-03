@@ -755,24 +755,6 @@ header{
     transform: translate(-50%, .5em);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj */
-
 @keyframes tooltips-vert {
     to {
       opacity: 1;
@@ -814,25 +796,6 @@ header{
       animation-delay: 300ms;
 
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .sidebar::-webkit-scrollbar { width: 10px;}
 .sidebar::-webkit-scrollbar-track {  background-color: none;}

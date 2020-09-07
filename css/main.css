@@ -1,19 +1,20 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     font-family: 'Lato', sans-serif;
+}
+html{
+    height: 100%;
 }
 body{
     overflow: hidden;
+    height: 100%;
 }
-.container{
-    display: flex;
-    flex-direction: column;
-    
-    
+.head,.sidebar,.title,.toolbar{
+    -webkit-user-select: none;
 }
 .head{
-    width: 100vw;
+    width: 100%;
 }
 
 header{
@@ -113,7 +114,6 @@ header{
     height: 1.5rem;
     margin-right: 5rem;
     cursor: pointer;
-
 }
 .help-btn .material-icons{
     display: flex;
@@ -298,15 +298,18 @@ header{
 .content-wrapper{
     display: flex;
     flex-direction: row;
-    height: 85vh;
-    
+    height: 100%;
 }
 .sidebar{
-    overflow-y: scroll;
     display: flex;
     flex-direction: column;
     width: 20%; 
     background-color: rgb(61, 6, 62);
+    padding-bottom: 6.5rem;
+}
+.sidebar-content{
+    overflow-y: scroll;
+    height: 85vh;
 }
 .navigation{
     width: 100%;
@@ -363,6 +366,9 @@ header{
     flex-direction: row;
     color: rgb(190, 172, 190);
     padding-left: 0.65rem;
+}
+.plus-icon{
+    margin-right: 0.7rem;
 }
 .drop-down-list-btn div{
     display: flex;
@@ -433,10 +439,11 @@ header{
     display: flex;
     flex-direction: column;
     width: 80%;
+    height: 100%;
 }
 .chat{
     overflow-y: scroll;
-    height: 80%;
+    height: 70%;
 }
 .title-container{
     display: flex;
@@ -529,11 +536,13 @@ header{
 .new-message-container{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-height: 45%;
-    height: fit-content;
+    width: 80%;
+    height: 6rem;
     align-items: center; 
-    justify-items: center; 
+    justify-items: center;
+    position: fixed;
+    bottom: 0;
+    
 }
 .new-message{
     display: flex;
@@ -545,7 +554,9 @@ header{
 .input{
     box-sizing: border-box;
     width: 96%;
-    min-height: 2.5rem;
+    max-width: 96%;
+    height: 2.5rem;
+    max-height: 7rem;
     height: fit-content;
     border: 1px solid gray;
     border-bottom: none;
@@ -797,10 +808,10 @@ header{
 
   }
 
-.sidebar::-webkit-scrollbar { width: 10px;}
-.sidebar::-webkit-scrollbar-track {  background-color: none;}
-.sidebar::-webkit-scrollbar-track-piece {background-color: none;}
-.sidebar::-webkit-scrollbar-thumb { height: 50px; background-color:none; border-radius: 5px;}
+.sidebar-content::-webkit-scrollbar { width: 10px;}
+.sidebar-content::-webkit-scrollbar-track {  background-color: none;}
+.sidebar-content::-webkit-scrollbar-track-piece {background-color: none;}
+.sidebar-content::-webkit-scrollbar-thumb { height: 50px; background-color:none; border-radius: 5px;}
 
 .chat::-webkit-scrollbar { width: 10px;}
 .chat::-webkit-scrollbar-track {  background-color: none;}
@@ -808,10 +819,10 @@ header{
 .chat::-webkit-scrollbar-thumb { height: 50px; background-color: none; border-radius: 5px;}
 
 
-.sidebar:hover::-webkit-scrollbar { width: 10px;}
-.sidebar:hover::-webkit-scrollbar-track {  background-color: none;}
-.sidebar:hover::-webkit-scrollbar-track-piece {background-color: none;}
-.sidebar:hover::-webkit-scrollbar-thumb { height: 50px; background-color: rgba(150, 123, 150, 0.5); border-radius: 5px;}
+.sidebar-content:hover::-webkit-scrollbar { width: 10px;}
+.sidebar-content:hover::-webkit-scrollbar-track {  background-color: none;}
+.sidebar-content:hover::-webkit-scrollbar-track-piece {background-color: none;}
+.sidebar-content:hover::-webkit-scrollbar-thumb { height: 50px; background-color: rgba(150, 123, 150, 0.5); border-radius: 5px;}
 
 .chat:hover::-webkit-scrollbar { width: 10px; }
 .chat:hover::-webkit-scrollbar-track {  background-color: none;}
@@ -827,3 +838,5 @@ header{
 .input:hover ::-webkit-scrollbar-track {  background-color: none;}
 .input:hover ::-webkit-scrollbar-track-piece {background-color: none;}
 .input:hover ::-webkit-scrollbar-thumb { height: 50px; background-color: rgba(50, 50, 50, 0.5); border-radius: 5px;}
+
+

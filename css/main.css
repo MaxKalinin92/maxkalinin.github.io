@@ -545,7 +545,7 @@ header{
     justify-items: center;
     position: fixed;
     bottom: 0;
-    
+    background-color: rgb(255, 255, 255);
 }
 .new-message{
     display: flex;

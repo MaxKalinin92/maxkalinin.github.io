@@ -442,8 +442,11 @@ header{
     height: 100%;
 }
 .chat{
+    display: flex;
+    flex-direction: column;
     overflow-y: scroll;
     height: 70%;
+    margin-bottom: 18.5%; 
 }
 .title-container{
     display: flex;
